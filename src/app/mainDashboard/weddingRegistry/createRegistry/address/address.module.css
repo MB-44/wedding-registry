@@ -1,0 +1,127 @@
+.container * {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.container {
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+    min-height: 100vh;
+    background-color: #fff;
+    background-image: url('../../../../../../public/images/background-2.jpg');
+    background-position: center;
+    background-size: cover;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.title {
+    font-size: 1.5rem;
+    color: #333;
+    line-height: 2;
+    font-weight: bold;
+    padding-top:100px;
+    padding-bottom: 30px;
+}
+
+.desc {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.inputGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    align-items: center;
+}
+
+
+.inputDate {
+    font-size: 1.1rem;
+    color: #4b4b4b;
+    border: none;
+    outline: none;
+    text-align: center;
+    padding: 0.5rem;
+    width: 150px;
+    cursor: pointer;
+    background: transparent;
+    /* border-bottom: 1px solid #4b4b4b; */
+}
+
+.inputDate:hover {
+    border-bottom: 1px solid #000;
+}
+
+.inputDate:focus {
+    border-bottom: 1px solid #000;
+}
+
+.inputBox {
+    width: 100%;
+    max-width: 400px;
+    outline: none;
+    color: black;
+    max-width: 400px;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: none;
+    border-bottom: 0.5px solid black;
+    margin: 0.4rem;
+    text-align: left;
+    background: transparent;
+}
+
+.inputBox:focus {
+    border-bottom: 0.7px solid black;
+}
+
+.inputBox::placeholder {
+    text-align: left;
+}
+
+.dateGroup {
+    padding-top: 40px;
+}
+
+.button {
+    font-size: 1rem;
+    padding: 0.7rem 2rem;
+    color: black;
+    margin: auto;
+    background: transparent;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.label {
+    color: #333;
+    padding-right: 5px;
+    font-size: 1.1rem;
+}
+
+.button:hover {
+    background-color: #333;
+    color: white;
+    border-color: #333;
+}
+
+@media (max-width: 768px) {
+    .inputBox {
+        max-width: 90%;
+    }
+
+    .button {
+        padding: 0.5rem 1.5rem;
+    }
+}

@@ -1,0 +1,91 @@
+.container * {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+    min-height: 100vh;
+    background-color: #ffff;
+    background-image: url('../../../../../../public/images/background.jpg');
+    background-position: center;
+    background-size: cover;
+    font-family: 'Times New Roman', Times, serif;
+    /* position: relative; */
+}
+
+.desc {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.inputDate {
+    font-size: 1rem;
+    color: #4b4b4b;
+    border: none;
+    border-bottom: 1px solid #4b4b4b;
+    outline: none;
+    text-align: center;
+    padding: 0.5rem;
+    width: 150px;
+    cursor: pointer;
+    background: transparent;
+}
+
+.inputDate:hover {
+    border-bottom: 1px solid #000;
+}
+
+.inputDate:focus {
+    border-bottom: 1px solid #000;
+}
+
+.inputBox {
+    outline: none;
+    color: black;
+    max-width: 400px;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: none;
+    border-bottom: 0.5px solid black;
+    margin: 1.5rem 0;
+    text-align: center;
+    background: transparent;
+}
+
+.inputBox:focus {
+    border-bottom: 0.7px solid black;
+}
+
+.button {
+    font-size: 1rem;
+    padding: 0.7rem 2rem;
+    color: black;
+    background: transparent;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.button:hover {
+    background-color: #333;
+    color: white;
+    border-color: #333;
+}
+
+@media (max-width: 768px) {
+    .inputBox {
+        max-width: 90%;
+    }
+
+    .button {
+        padding: 0.5rem 1.5rem;
+    }
+}
