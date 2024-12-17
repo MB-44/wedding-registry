@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { jwtVerify } from 'jose';
+import { runtime } from '@/app/api/testDatabase/route';
 
 const SECRET_KEY = process.env.JWT_SECRET!;
 const encoder = new TextEncoder();
@@ -25,6 +26,7 @@ export async function middleware(req: NextRequest) {
 
 export const config = {
   matcher: ["/api/protected-route"],
+  runtime: "nodejs",
 };
 
 
