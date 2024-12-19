@@ -7,6 +7,7 @@ import MAIN_DASHBOARD from "./mainDashboard/page";
 export default function Home() {
   return(
     <div>
+      {/* Welcome */}
       <MAIN_DASHBOARD/>
       {/* <LOGIN_PAGE/> */}
     </div>
