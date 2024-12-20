@@ -52,7 +52,7 @@
     gap: 10px;
   }
   
-  input, textarea {
+.container input,.container textarea {
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
@@ -60,7 +60,7 @@
     font-size: 1rem;
   }
   
-  input:focus, textarea:focus {
+.container input:focus,.container textarea:focus {
     outline: none;
     border-color: #007bff;
   }
