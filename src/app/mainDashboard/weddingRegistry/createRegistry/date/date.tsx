@@ -8,7 +8,7 @@ const Date: React.FC = () => {
     const router = useRouter();
 
     const handleButton = () => {
-        router.push("/mainDashboard/weddingRegistry/createRegistry/verification")
+        router.push("/mainDashboard/weddingRegistry/createRegistry/invitationLink")
     }
 
     return(

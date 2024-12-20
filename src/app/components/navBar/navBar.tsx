@@ -53,7 +53,7 @@ const NavigationBar: React.FC = () => {
           {activeDropdown === "wedding" && (
             <ul className={styles.dropdown}>
               <li>
-                <a href="/wedding-sub1">View Registry</a>
+                <a href="/viewRegistry">View Registry</a>
               </li>
               <li>
                 <a href="/wedding-sub2">Add Items</a>
@@ -87,10 +87,10 @@ const NavigationBar: React.FC = () => {
           {activeDropdown === "Profile" && (
             <ul className={styles.dropdown}>
               <li>
-                <a href="/edit-profile">Edit Profile</a>
+                <a href="/editProfile">Edit Profile</a>
               </li>
               <li>
-                <a href="/your-gallery">Your Gallery</a>
+                <a href="/gallery">Your Gallery</a>
               </li>
               <li>
                 <a href="/sign-out">Sign Out</a>
